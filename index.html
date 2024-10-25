@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulador de Compra de Pasajes de Avión</h1>
+    </header>
+
+    <h2>¡Destino al azar!</h2>
+    <h4 id="Resultado"></h4>
+    <button onclick="mostrarPaisItinerante()">Tómbola magnífica!</button>
+
+    <h1>¿Cómo y con quién viajarás?</h1>
+    
+    <!-- Selección Transporte -->
+    <label for="selectTransporte">Selecciona el medio de transporte:</label>
+    <select id="selectTransporte"></select>
+    
+    <!-- Selección de Animal -->
+    <label for="selectAnimal">Selecciona el animal de compañía:</label>
+    <select id="selectAnimal"></select>
+    
+    <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+
+    <!-- Carro -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="listaCarrito"></ul>
+        <p>Total: $<span id="totalCompra">0</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>
